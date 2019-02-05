@@ -12,6 +12,10 @@
 		101D67AD2208F1BA00FAD720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101D67AB2208F1BA00FAD720 /* Main.storyboard */; };
 		101D67AF2208F1BA00FAD720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101D67AE2208F1BA00FAD720 /* Assets.xcassets */; };
 		101D67B22208F1BB00FAD720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101D67B02208F1BB00FAD720 /* LaunchScreen.storyboard */; };
+		102B32982209D864002C33CF /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102B32972209D864002C33CF /* NetworkLayer.swift */; };
+		102B329B220A1523002C33CF /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102B329A220A1523002C33CF /* AccountModel.swift */; };
+		102B329D220A168B002C33CF /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102B329C220A168B002C33CF /* PageModel.swift */; };
+		8E2769F84FE447C377B17E06 /* Pods_declorant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBB70B9572CAB0AFD7E451 /* Pods_declorant.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		101D67AE2208F1BA00FAD720 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		101D67B12208F1BB00FAD720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		101D67B32208F1BB00FAD720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		102B32972209D864002C33CF /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		102B329A220A1523002C33CF /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		102B329C220A168B002C33CF /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		25A8DC0D88A2B75FBC83933C /* Pods-declorant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-declorant.release.xcconfig"; path = "Pods/Target Support Files/Pods-declorant/Pods-declorant.release.xcconfig"; sourceTree = "<group>"; };
+		712C2EC4CBA0561827371347 /* Pods-declorant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-declorant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-declorant/Pods-declorant.debug.xcconfig"; sourceTree = "<group>"; };
+		F6EBB70B9572CAB0AFD7E451 /* Pods_declorant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_declorant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E2769F84FE447C377B17E06 /* Pods_declorant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				101D67A62208F1BA00FAD720 /* declorant */,
 				101D67A52208F1BA00FAD720 /* Products */,
+				15FF224BE049B7F430497344 /* Pods */,
+				E372DAAA9B44402451AB4FF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +69,48 @@
 			children = (
 				101D67A72208F1BA00FAD720 /* AppDelegate.swift */,
 				101D67A92208F1BA00FAD720 /* ViewController.swift */,
+				102B32992209D868002C33CF /* Network Layer */,
 				101D67AB2208F1BA00FAD720 /* Main.storyboard */,
 				101D67AE2208F1BA00FAD720 /* Assets.xcassets */,
 				101D67B02208F1BB00FAD720 /* LaunchScreen.storyboard */,
 				101D67B32208F1BB00FAD720 /* Info.plist */,
 			);
 			path = declorant;
+			sourceTree = "<group>";
+		};
+		102B32992209D868002C33CF /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				102B32972209D864002C33CF /* NetworkLayer.swift */,
+				102B329E220A194C002C33CF /* Data Models */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		102B329E220A194C002C33CF /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				102B329A220A1523002C33CF /* AccountModel.swift */,
+				102B329C220A168B002C33CF /* PageModel.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		15FF224BE049B7F430497344 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				712C2EC4CBA0561827371347 /* Pods-declorant.debug.xcconfig */,
+				25A8DC0D88A2B75FBC83933C /* Pods-declorant.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E372DAAA9B44402451AB4FF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6EBB70B9572CAB0AFD7E451 /* Pods_declorant.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 101D67B62208F1BB00FAD720 /* Build configuration list for PBXNativeTarget "declorant" */;
 			buildPhases = (
+				02053D1A63F932F71B4E876A /* [CP] Check Pods Manifest.lock */,
 				101D67A02208F1BA00FAD720 /* Sources */,
 				101D67A12208F1BA00FAD720 /* Frameworks */,
 				101D67A22208F1BA00FAD720 /* Resources */,
+				3BEBF185DE65875B1992BE27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +181,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02053D1A63F932F71B4E876A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-declorant-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BEBF185DE65875B1992BE27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-declorant/Pods-declorant-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-declorant/Pods-declorant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		101D67A02208F1BA00FAD720 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102B32982209D864002C33CF /* NetworkLayer.swift in Sources */,
+				102B329D220A168B002C33CF /* PageModel.swift in Sources */,
 				101D67AA2208F1BA00FAD720 /* ViewController.swift in Sources */,
 				101D67A82208F1BA00FAD720 /* AppDelegate.swift in Sources */,
+				102B329B220A1523002C33CF /* AccountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +381,7 @@
 		};
 		101D67B72208F1BB00FAD720 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 712C2EC4CBA0561827371347 /* Pods-declorant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +400,7 @@
 		};
 		101D67B82208F1BB00FAD720 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25A8DC0D88A2B75FBC83933C /* Pods-declorant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
