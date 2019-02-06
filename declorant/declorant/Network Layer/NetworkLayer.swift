@@ -13,6 +13,7 @@ typealias JSON = [String : Any]
 class NetworkLayer {
     
     static let apiString = "https://public-api.nazk.gov.ua/v1/declaration/"
+    static let reportString = "https://public.nazk.gov.ua"
     
     static func searcDeclarations(name: String, page: Int = 1, completion: @escaping([AccountModel]?, PageModel?) -> Void) {
         

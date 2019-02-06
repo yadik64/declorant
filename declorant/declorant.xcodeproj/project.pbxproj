@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		101D67A82208F1BA00FAD720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D67A72208F1BA00FAD720 /* AppDelegate.swift */; };
-		101D67AA2208F1BA00FAD720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D67A92208F1BA00FAD720 /* ViewController.swift */; };
 		101D67AD2208F1BA00FAD720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101D67AB2208F1BA00FAD720 /* Main.storyboard */; };
 		101D67AF2208F1BA00FAD720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101D67AE2208F1BA00FAD720 /* Assets.xcassets */; };
 		101D67B22208F1BB00FAD720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101D67B02208F1BB00FAD720 /* LaunchScreen.storyboard */; };
 		102B32982209D864002C33CF /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102B32972209D864002C33CF /* NetworkLayer.swift */; };
 		102B329B220A1523002C33CF /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102B329A220A1523002C33CF /* AccountModel.swift */; };
 		102B329D220A168B002C33CF /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102B329C220A168B002C33CF /* PageModel.swift */; };
+		102B32A3220A48EA002C33CF /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102B32A1220A48EA002C33CF /* AccountTableViewCell.swift */; };
+		102B32A4220A48EA002C33CF /* AccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 102B32A2220A48EA002C33CF /* AccountTableViewCell.xib */; };
+		10B9B399220ADD9000FF9FCF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B9B398220ADD9000FF9FCF /* SearchViewController.swift */; };
+		10B9B39B220ADDB900FF9FCF /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B9B39A220ADDB900FF9FCF /* SearchResultViewController.swift */; };
 		8E2769F84FE447C377B17E06 /* Pods_declorant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EBB70B9572CAB0AFD7E451 /* Pods_declorant.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		101D67A42208F1BA00FAD720 /* declorant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = declorant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		101D67A72208F1BA00FAD720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		101D67A92208F1BA00FAD720 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		101D67AC2208F1BA00FAD720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		101D67AE2208F1BA00FAD720 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		101D67B12208F1BB00FAD720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,6 +31,10 @@
 		102B32972209D864002C33CF /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		102B329A220A1523002C33CF /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		102B329C220A168B002C33CF /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		102B32A1220A48EA002C33CF /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		102B32A2220A48EA002C33CF /* AccountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountTableViewCell.xib; sourceTree = "<group>"; };
+		10B9B398220ADD9000FF9FCF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		10B9B39A220ADDB900FF9FCF /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		25A8DC0D88A2B75FBC83933C /* Pods-declorant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-declorant.release.xcconfig"; path = "Pods/Target Support Files/Pods-declorant/Pods-declorant.release.xcconfig"; sourceTree = "<group>"; };
 		712C2EC4CBA0561827371347 /* Pods-declorant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-declorant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-declorant/Pods-declorant.debug.xcconfig"; sourceTree = "<group>"; };
 		F6EBB70B9572CAB0AFD7E451 /* Pods_declorant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_declorant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,12 +74,12 @@
 			isa = PBXGroup;
 			children = (
 				101D67A72208F1BA00FAD720 /* AppDelegate.swift */,
-				101D67A92208F1BA00FAD720 /* ViewController.swift */,
-				102B32992209D868002C33CF /* Network Layer */,
 				101D67AB2208F1BA00FAD720 /* Main.storyboard */,
 				101D67AE2208F1BA00FAD720 /* Assets.xcassets */,
 				101D67B02208F1BB00FAD720 /* LaunchScreen.storyboard */,
 				101D67B32208F1BB00FAD720 /* Info.plist */,
+				102B32A5220A545D002C33CF /* UILayer */,
+				102B32992209D868002C33CF /* Network Layer */,
 			);
 			path = declorant;
 			sourceTree = "<group>";
@@ -90,10 +96,37 @@
 		102B329E220A194C002C33CF /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				102B32A7220A54B6002C33CF /* Controllers */,
+				102B32A6220A549C002C33CF /* Cells */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		102B32A5220A545D002C33CF /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				102B32A1220A48EA002C33CF /* AccountTableViewCell.swift */,
+				102B32A2220A48EA002C33CF /* AccountTableViewCell.xib */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		102B32A6220A549C002C33CF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
 				102B329A220A1523002C33CF /* AccountModel.swift */,
 				102B329C220A168B002C33CF /* PageModel.swift */,
 			);
-			path = "Data Models";
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		102B32A7220A54B6002C33CF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				10B9B398220ADD9000FF9FCF /* SearchViewController.swift */,
+				10B9B39A220ADDB900FF9FCF /* SearchResultViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		15FF224BE049B7F430497344 /* Pods */ = {
@@ -174,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				101D67B22208F1BB00FAD720 /* LaunchScreen.storyboard in Resources */,
+				102B32A4220A48EA002C33CF /* AccountTableViewCell.xib in Resources */,
 				101D67AF2208F1BA00FAD720 /* Assets.xcassets in Resources */,
 				101D67AD2208F1BA00FAD720 /* Main.storyboard in Resources */,
 			);
@@ -233,10 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B9B399220ADD9000FF9FCF /* SearchViewController.swift in Sources */,
+				10B9B39B220ADDB900FF9FCF /* SearchResultViewController.swift in Sources */,
 				102B32982209D864002C33CF /* NetworkLayer.swift in Sources */,
 				102B329D220A168B002C33CF /* PageModel.swift in Sources */,
-				101D67AA2208F1BA00FAD720 /* ViewController.swift in Sources */,
 				101D67A82208F1BA00FAD720 /* AppDelegate.swift in Sources */,
+				102B32A3220A48EA002C33CF /* AccountTableViewCell.swift in Sources */,
 				102B329B220A1523002C33CF /* AccountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
